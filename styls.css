@@ -1,0 +1,274 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* font-variation-settings: */
+    min-height: 100vh;
+    background: url(./imgs/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    width: 100%;
+}
+#val{
+    filter: blur(200px);
+}
+#firt{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#content{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px black;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.3s; /* Adjust duration as needed */
+    animation-fill-mode: forwards; /* Keeps the last state of the animation */
+}
+#disp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border : 2px solid rgba(0, 0, 0, 0.162);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486) inset;
+    border-radius: 30px;
+    height: 80px;
+    animation: shake 0.5s;
+    animation-fill-mode: forwards;
+    filter: blur(200px);
+}
+#digone, #digtwo, #sign{
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+}
+#sign{
+    width: 20%;
+}
+ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#gen, #genm, #genp, #butt, #start, #reset, #btEZ, #btMD, #btHD, #btEXT{
+    position: relative;
+    bottom: 0px;
+    font-size: 2rem;
+    font-weight:1;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+height: 50px;
+width: 80px;
+background: none;
+border : 2px solid rgba(0, 0, 0, 0.162);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486) ;
+border-radius: 10px;
+transition: 300ms;
+color:rgba(0, 0, 0, 0.589) ;
+}
+.signalive{
+    border: 2px solid rgb(64, 0, 255) !important;
+}
+.default{
+animation: bod 300ms linear;
+animation-fill-mode: forwards;
+}
+@keyframes bod{
+    100%{
+        position: relative;
+        bottom: 0px;
+        font-weight:1;
+        font-family: "Cabin", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        text-transform: uppercase;
+    height: 50px;
+    width: 80px;
+    background: none;
+    border : 2px solid rgba(0, 0, 0, 0.162);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486) ;
+    border-radius: 10px;
+    transition: 300ms;
+    color:rgba(0, 0, 0, 0.589) ;
+    animation: bod 2s linear;
+    }
+}
+#btEZ, #btMD, #btHD, #btEXT{
+    position: relative;
+    bottom: 0px;
+    font-size: 2rem;
+    font-weight:1;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+height: 50px;
+width: 80px;
+background: none;
+border : 2px solid rgb(102, 255, 0);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486) ;
+border-radius: 10px;
+transition: 300ms;
+color:rgba(0, 0, 0, 0.589) ;
+}
+.btEZselct{
+    position: relative;
+    bottom: 0px;
+    font-size: 2rem;
+    font-weight:1;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+height: 50px;
+width: 80px;
+background: none;
+border : 2px solid rgb(0, 166, 255);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486) ;
+border-radius: 10px;
+transition: 300ms;
+color:rgba(0, 0, 0, 0.589) ;
+}
+#genp{
+    padding: 10px 10px 10px 10px;
+}
+
+#butt, #start, #reset, #btEZ, #btMD, #btHD,#btEXT{
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.589) ;
+}
+#gen:hover, #genm:hover, #genp:hover, #butt:hover, #start:hover, #reset:hover, #btEZ:hover, #btMD:hover, #btHD:hover,#btEXT:hover{
+    border : 1px solid rgb(251, 242, 250) !important;
+    position: relative ;
+    bottom: 1px;
+    transition: 300ms;
+}
+#gen:active, #genm:active, #genp:active, #butt:active, #start:active, #reset:active, #btEZ:active, #btMD:active, #btHD:active, #btEXT:active{
+    border : 2px solid rgba(0, 0, 0, 0.162);
+    position: relative;
+    bottom: 0px;
+    transition: 300ms;
+}
+input{
+    height: 50px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    background: none;
+    transition: 300ms;
+    text-transform: capitalize;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:hover{
+    border: 1px solid white;
+}
+input:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px inset;
+    transition: 300ms;
+    border: none;
+}
+input:active{
+    outline: none;
+}
+#decla{
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+    text-align: center;
+}
+.count{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px black;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+}
+@keyframes dissp {
+    0% { 
+        opacity: 1; 
+        border: 2px solid red;
+    }
+    25% { 
+        opacity: 0.8; 
+    }
+    50% { 
+        opacity: 0.5;
+     }
+    75% {
+        opacity: 0.2; 
+    }
+    100% {
+         opacity: 0;;
+   
+     }
+}
+.disp {
+    animation: dissp 500ms ease-in; /* Adjust duration as needed */
+    animation-fill-mode: forwards; /* Keeps the last state of the animation */
+}
+#func{
+    display: flex;
+    gap: 10px;
+}
